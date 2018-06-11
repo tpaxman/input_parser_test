@@ -82,4 +82,12 @@
       end
     end
 
-% I am unsure whether this is the best method for taking in arguments and for using them in subsequent functions.  This method works, although I'm not sure that it's the best practice, nor the most flexible, for example, considering the scenario when I would like to use plot_special on its own, and would like to be able to pass it arguments for `xVariable`, `yVariable`, etc. if need be.  Given that it is currently dependent on the `parsedInputs` list from the `main` function, that wouldn't be doable.  However, I'm unsure what another way to define it would be. I considered having an `if` statement built in along with a `varargin` input argument that checks whether the varargin is an already-parsed struct, or if it's getting the variables directly and needs to call the `parse_plot_inputs` itself to get things working.  Any advice would be great.
+% I am unsure whether this is the best method for taking in arguments and for using them in 
+% subsequent functions.  This method works, although I'm not sure that it's the best practice,
+% nor the most flexible, for example, considering the scenario when I would like to use 
+% plot_special on its own, and would like to be able to pass it arguments for `xVariable`, 
+% `yVariable`, etc. if need be.  Given that it is currently dependent on the `parsedInputs` 
+% list from the `main` function, that wouldn't be doable.  However, I'm unsure what another way 
+% to define it would be. I considered having an `if` statement built in along with a `varargin` 
+% input argument that checks whether the varargin is an already-parsed struct, or if it's getting
+% the variables directly and needs to call the `parse_plot_inputs` itself to get things working. 
